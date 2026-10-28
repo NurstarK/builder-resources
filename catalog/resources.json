@@ -4508,20 +4508,20 @@
   },
   {
     "name": "Aeon sc-audit",
-    "description": "An autonomous smart-contract auditing skill for the open-source Aeon agent framework that audits Solidity repositories and live onchain contracts on Ethereum and EVM L2s, running unattended on GitHub Actions. It layers adversarial verification passes, invariant modeling, and differential testing against reference implementations on top of Slither static analysis, and reports severity-rated findings with written disclosures.",
+    "description": "An agent skill that audits Solidity repositories and live verified contracts on Ethereum and EVM L2s, runnable in Claude Code or on a schedule in the open-source Aeon framework. It models protocol invariants first, runs Slither plus an agentic source review that hunts for paths breaking each invariant, adversarially verifies every candidate, tries to prove breaks with Echidna or Medusa fuzzing, and writes a severity-rated audit report.",
     "tags": [
       "security",
       "static-analysis",
+      "fuzz-testing",
       "solidity",
-      "agent-skills",
-      "github-actions"
+      "agent-skills"
     ],
-    "subcategory_id": "fuzz-property-testing",
+    "subcategory_id": "agent-skills",
     "website": "https://www.aeon.fun/audits",
     "repos": [
       "https://github.com/aeonfun/aeon"
     ],
     "thumbnail_url": "https://github.com/aeonfun.png",
-    "llmstext": "https://aeon.fun/skills/aeon.md"
+    "llmstext": "https://raw.githubusercontent.com/aeonfun/aeon/main/skills/sc-audit/SKILL.md"
   }
 ]
